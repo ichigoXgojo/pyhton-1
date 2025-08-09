@@ -1,8 +1,13 @@
-n = int(input("Enter the value of terms:"))
+string =input("please enter your own character : ")
 
-sum = 0
-i = 1 
-while i <=n:
-    sum = sum+i
-    i = i+1
-print("\nsum =", sum)
+char = input("please enter your own character : ")
+
+i = 0
+count = 0
+while (i < len(string)):
+
+    if string[i] == char:
+        count = count + 1
+    i = i + 1
+
+print("the total number of times " , char, " has occured =" , count)
