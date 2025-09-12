@@ -11,5 +11,5 @@ def getrandom_date(startdate, enddate ):
     randomdate = time.strftime(dateformat, time.localtime(randomtime))
     return randomdate
 
-print(random date ="getrandom_date("1-1-2016", "31-12-2018"))")
+print("random date =",getrandom_date("1-1-2016", "31-12-2018"))
 
