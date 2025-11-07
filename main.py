@@ -1,13 +1,15 @@
-string =input("please enter your own character : ")
+import pygame
 
-char = input("please enter your own character : ")
+pygame.init()   
 
-i = 0
-count = 0
-while (i < len(string)):
+screen = pygame.display.set_mode((800, 600))
 
-    if string[i] == char:
-        count = count + 1
-    i = i + 1
+done = False
 
-print("the total number of times " , char, " has occured =" , count)
+while not done:
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+
+    pygame.display.flip()   
